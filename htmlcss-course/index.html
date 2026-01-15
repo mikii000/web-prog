@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My first website</title>
+  <!--   <link rel = 'stylesheet' href="css/style.css" type="text/css"> -->
+    <meta name="description" content="A simple HTML starter template." />
+    <style>
+      body { font-family: system-ui, Arial, sans-serif; margin: 0; line-height: 1.5; }
+      header, footer { padding: 16px; background: #f5f5f5; }
+      main { padding: 24px; max-width: 900px; margin: 0 auto; }
+      nav a { margin-right: 12px; text-decoration: none; }
+      .card { padding: 16px; border: 1px solid #ddd; border-radius: 12px; }
+      .btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid #ddd; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>Brand</strong>
+      <nav style="margin-top:8px;">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <h1>Hello 👋</h1>
+      <p>Use this template as a starting point.</p>
+
+      <section id="features" class="card">
+        <h2>Features</h2>
+        <ul>
+          <li>Responsive meta viewport</li>
+          <li>Basic layout</li>
+          <li>Simple styling</li>
+        </ul>
+        <a class="btn" href="#contact">Get in touch</a>
+      </section>
+
+      <section id="contact" style="margin-top:24px;">
+        <h2>Contact</h2>
+        <form>
+          <label>
+            Email<br />
+            <input type="email" placeholder="you@example.com" required style="padding:10px;width:100%;max-width:420px;" />
+          </label>
+          <br /><br />
+          <label>
+            Message<br />
+            <textarea rows="4" placeholder="Write something..." style="padding:10px;width:100%;max-width:420px;"></textarea>
+          </label>
+          <br /><br />
+          <button type="submit" style="padding:10px 14px;border-radius:10px;border:1px solid #ddd;">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span id="year"></span> Brand. All rights reserved.</small>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
